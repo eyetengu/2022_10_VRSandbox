@@ -19,15 +19,15 @@ MonoBehaviour:
   - Ruler
   - TinyHouse
   - Lantern
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ResearchAssistant
+  - Pickups
+  - Pickup_Red
+  - Pickup_Green
+  - Pickup_Blue
+  - Camera
+  - Raycasts
+  - Pallette
+  - Paintbrush
   - 
   - 
   - 

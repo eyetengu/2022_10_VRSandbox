@@ -18,6 +18,9 @@ public class ToggleRay : MonoBehaviour
     private XRRayInteractor rayInteractor = null;
     private bool isSwitched = false;
 
+    [SerializeField] private bool _isActive;
+
+
     private void Awake()
     {
         rayInteractor = GetComponent<XRRayInteractor>();
@@ -27,7 +30,20 @@ public class ToggleRay : MonoBehaviour
     public void ActivateRay()
     {
         if (!TouchingObject() || forceToggle)
-            SwitchInteractors(true);
+        {
+            _isActive = !_isActive;
+            if(_isActive == true)
+            {
+                SwitchInteractors(true);
+            }
+            else
+            {
+                SwitchInteractors(false);
+            }
+
+
+        }
+
     }
 
     public void DeactivateRay()
